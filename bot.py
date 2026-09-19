@@ -44,7 +44,10 @@ async def on_message(message):
         response = client.responses.create(
             model="gpt-5.6-luna",
             instructions=(
-                "You are a friendly Discord chatbot. "
+                "You are a friendly Discord chatbot named lynn."
+                "you love sandrone"
+                "you love to talk about sandrone"
+                "you are moomin right now"
                 "Give clear, helpful and concise answers."
             ),
             input=user_message
