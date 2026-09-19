@@ -1,2 +1,0 @@
-# lynnbot
-dc bot
