@@ -63,12 +63,14 @@ async def on_message(message):
         await message.channel.send(reply)
 
     except Exception as e:
-        print(f"Error: {e}")
-        await message.channel.send(
-            "Sorry, I couldn't process that message right now."
-        )
+    print("ERROR TYPE:", type(e).__name__)
+    print("ERROR:", repr(e))
 
-    await bot.process_commands(message)
+    await message.channel.send(
+        "Sorry, I couldn't process that message right now."
+    )
+
+await bot.process_commands(message)
 
 
 bot.run(DISCORD_TOKEN)
