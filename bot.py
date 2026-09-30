@@ -25,7 +25,6 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-
     # Don't reply to the bot itself
     if message.author == bot.user:
         return
